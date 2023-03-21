@@ -182,19 +182,19 @@ public class MainActivity extends AppCompatActivity {
         saveButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                if (!groceryItemName.getText().toString().isEmpty() &&
-//                        !groceryItemID.getText().toString().isEmpty() &&
-//                        !groceryItemPrice.getText().toString().isEmpty() &&
-//                        !groceryItemCategory.getText().toString().isEmpty() &&
-//                        !groceryItemDescription.getText().toString().isEmpty()) {
-//                    List<String> idList = db.getAllIds();
-//                    if (!idList.contains(groceryItemID.getText().toString())) {
+                if (!groceryItemName.getText().toString().isEmpty() &&
+                        !groceryItemID.getText().toString().isEmpty() &&
+                        !groceryItemPrice.getText().toString().isEmpty() &&
+                        !groceryItemCategory.getText().toString().isEmpty() &&
+                        !groceryItemDescription.getText().toString().isEmpty()) {
+                    List<String> idList = db.getAllIds();
+                    if (!idList.contains(groceryItemID.getText().toString())) {
                         saveItem(v);
-//                    } else
-//                        Toast.makeText(getApplicationContext(), "Вече съществува артикул с такъв идентификатор", Toast.LENGTH_SHORT).show();
-//                } else {
-//                    Toast.makeText(getApplicationContext(), "Моля въведете всички полета!", Toast.LENGTH_SHORT).show();
-//                }
+                    } else
+                        Toast.makeText(getApplicationContext(), "Вече съществува артикул с такъв идентификатор", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Моля въведете всички полета!", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
