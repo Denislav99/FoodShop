@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">FoodShop</string>
+    <string name="addProduct">Добавяне</string>
+    <string name="listOfProducts">Заявка</string>
+    <string name="shopCart">Kоличка</string>
+
+    <string name="itemId">Идентификатор:</string>
+    <string name="name">Име:</string>
+    <string name="price">Цена:</string>
+    <string name="saveButton">Запазване</string>
+    <string name="category">Категория:</string>
+    <string name="description">Описание:</string>
+    <string name="date">Дата:</string>
+
+    <string name="areYouSure">Сигурни ли сте ?</string>
+    <string name="yes">Да</string>
+    <string name="no">Не</string>
+
+    <string name="select">Заявка</string>
+
+    <string name="editItem">Редактирайте артикул</string>
+    <string name="selectItem">Заявка за артикул по категория</string>
+    <string name="enterItem">Въведете артикул</string>
+
+    <string name="finishButton">Завършване на поръчката</string>
+
+    <string name="personData">Данни за потребител</string>
+    <string name="family">Фамилия:</string>
+    <string name="phone">Телефон:</string>
+    <string name="birthday">Дата на раждане:</string>
+    <string name="email">E-mail:</string>
+
+</resources>
