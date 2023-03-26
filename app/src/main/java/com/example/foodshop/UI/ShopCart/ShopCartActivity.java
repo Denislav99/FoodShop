@@ -87,17 +87,25 @@ public class ShopCartActivity extends AppCompatActivity {
         finishPersonButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (personName.getText().toString().isEmpty() &&
+                        personFamily.getText().toString().isEmpty() &&
+                        personPhone.getText().toString().isEmpty() &&
+                        personBD.getText().toString().isEmpty() &&
+                        personEmail.getText().toString().isEmpty()) {
+                    Toast.makeText(getApplicationContext(), "Моля въведете всички полета!", Toast.LENGTH_SHORT).show();
+                } else {
 
-                Toast.makeText(getApplicationContext(), "Успешна поръчка!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Успешна поръчка!", Toast.LENGTH_SHORT).show();
 
-                new Handler().postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
 
-                        dialog.dismiss();
-                        startActivity(new Intent(ShopCartActivity.this, MainActivity.class));
-                    }
-                }, 1000);
+                            dialog.dismiss();
+                            startActivity(new Intent(ShopCartActivity.this, MainActivity.class));
+                        }
+                    }, 1000);
+                }
             }
         });
     }
